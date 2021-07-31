@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com números</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="numeros.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Brincando com números!</h1>       
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contato</a>
+    </nav>
+    <section id="section1">
+        <h2>Analisador de números</h2>
+        <p class="paragrafo">Adicione quantos números quiser, e veja as informações que serão geradas, ao clicar em finalizar.</p><br>
+        <div id="principal">
+            <P>Número entre 1 e 100: 
+                <input type="number" name="fnum" id="fnum"> 
+                <input type="button" value="Adicionar" onclick="adicionar()" class="button">
+                <br><br><select name="flista" id="flista" size="10">                    
+                </select>
+                <img id="img_number" src="numeros.png" alt="imagem de numeros">
+            </P>
+            <p><input type="button" value="Finalizar" onclick="finalizar()" class="button">
+            <a href="index.html"><input type="button" value="zerar"></a></p>
+        </div>
+        <div id="res">            
+        </div>
+    </section>
+    <section id="section2">
+        <h1>Tabuada</h1>  
+        <p class="paragrafo">Aqui, você saberá a tabuada de qualquer número, basta escolher um número e depois clicar no botão <em>"Gerar tabuada!"</em></p><br> 
+        <div id="gertab" >
+            Numero: <input type="number" name="num1" id="txtn">        
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()" class="button"><a href="index.html"><input type="button" value="zerar"></a><br><br>                       
+        </div>
+        <div id="res2">            
+                <div id="select1">
+                    <select name="Tabuada" id="seltab" size="10">
+                        <option>Por favor, digite um número acima</option>
+                    </select>
+                </div>                            
+        </div>
+    </section>
+    <section id="section3">
+        <h1>Contador de passos</h1>
+        <p class="paragrafo">Aqui você digita um número inicial, depois um número final. Depois escolhe de quanto em quanto quer caminhar...</p><br>
+        <div id="dados">
+            <p>Inicio: <input type="number" name="inicio" id="txti" class="section3f"></p>
+            <p>Fim:    <input type="number" name="fim" id="txtf" class="section3f"></p>
+            <p>Passo:  <input type="number" name="passo" id="txtp" class="section3f"></p><br>            
+            <p><input type="button" value="Contar" onclick="contar()" class="button"><a href="index.html"><input type="button" value="zerar"></a></p><br>
+
+        </div>
+        <div id="res1">
+            <p>Preparando a contagem...</p>
+        </div>
+    </section>
+    <footer>&copy;Rodolfo Corrêa</footer>
+</body>
+<script src="script.js"></script>
+</html>
